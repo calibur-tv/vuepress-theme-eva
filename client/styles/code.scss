@@ -250,13 +250,3 @@ div[class*='language-'] {
     }
   }
 }
-
-// narrow mobile
-@media (max-width: $MQMobileNarrow) {
-  .theme-container {
-    div[class*='language-'] {
-      margin: 0.85rem -1.5rem;
-      border-radius: 0;
-    }
-  }
-}

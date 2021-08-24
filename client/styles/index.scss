@@ -21,11 +21,19 @@ body {
   -webkit-text-size-adjust: none;
 
   position: relative;
-  max-width: 700px;
   margin: 0 auto;
   padding: 0;
   background: $bgColor;
   color: $textColor;
+}
+
+.theme-container {
+  overflow-x: hidden;
+  margin: 0 20px;
+
+  img {
+    border-radius: 6px;
+  }
 }
 
 h1, 
@@ -50,9 +58,11 @@ video,
 canvas, 
 iframe {
   max-width: 100%;
-}.header {
-  margin: 50px auto 40px;
-  text-align: center;.site-name {
+}
+.header {
+  padding: 50px 0 40px;
+  text-align: center;
+  .site-name {
     font-size: $fontSize + 2;
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -83,7 +93,7 @@ iframe {
     color: $textColor;
   }
 }.footer {
-  margin-bottom: 15px;
+  padding-bottom: 15px;
   text-align: center;
   color: $metaColor;
 
@@ -101,7 +111,8 @@ iframe {
     vertical-align: sub;
   }
 }.list-view {
-  margin: 0 20px;
+  max-width: 660px;
+  margin: 0 auto;
 
   ol, 
   ul {
@@ -127,9 +138,11 @@ iframe {
   color: $metaColor;
   border-top: 1px solid $lineColor;
   padding-top: 12px;
-}.post-view {
+}
+.post-view {
   position: relative;
-  margin: 0 20px 50px;
+  max-width: 660px;
+  margin: 0 auto;
   a.header-anchor {
     position: absolute;
     left: -30px;

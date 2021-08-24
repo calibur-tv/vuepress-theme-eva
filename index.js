@@ -17,6 +17,21 @@ const theme = (config) => {
         {
           theme: 'dark-plus'
         }
+      ],
+      [
+        '@vuepress/nprogress',
+        config.nprogress !== false
+      ],
+      ['@vuepress/palette', { preset: 'sass' }],
+      [
+        '@vuepress/medium-zoom',
+        {
+          selector: '.theme-container > img, .theme-container :not(a) > img',
+          zoomOptions: {
+            background: '#BADA55'
+          },
+          delay: 400
+        }
       ]
     ],
     onPrepared: async(app) => {
