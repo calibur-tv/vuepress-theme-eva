@@ -1,7 +1,7 @@
 {
-  "name": "vuepress-theme-simple",
-  "description": "✏️ Very Simple Blog Theme for VuePress",
-  "version": "1.2.2",
+  "name": "@calibur-tv/vuepress-theme-eva",
+  "description": "A vuepress-next theme",
+  "version": "0.0.0",
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev example --debug",
@@ -12,8 +12,8 @@
     "vuepress-theme",
     "blog-theme"
   ],
-  "author": "viko16 <16viko@gmail.com>",
-  "repository": "viko16/vuepress-theme-simple",
+  "author": "icesilt@outlook.com",
+  "repository": "@calibur-tv/vuepress-theme-eva",
   "license": "MIT",
   "devDependencies": {
     "standard-version": "^9.3.1",

@@ -3,10 +3,10 @@ import { defineUserConfig } from 'vuepress'
 import type { DefaultThemeOptions } from 'vuepress'
 
 export default defineUserConfig<DefaultThemeOptions>({
-  title: 'Example Site',
-  description: 'Example for vuepress-theme-simple',
+  title: '{ do something }',
+  description: 'Example for @calibur-tv/vuepress-theme-eva',
   theme: path.resolve(__dirname, '../../'),
   themeConfig: {
-    author: 'viko16'
+    author: '冰淤'
   },
 })

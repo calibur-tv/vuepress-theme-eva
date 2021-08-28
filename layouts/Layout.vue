@@ -1,5 +1,5 @@
 <template>
-  <div class="theme-container vuepress-theme-simple">
+  <div class="theme-container">
     <header class="header">
       <router-link
         to="/"

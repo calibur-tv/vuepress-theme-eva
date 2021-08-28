@@ -2,7 +2,7 @@ const { path } = require('@vuepress/utils')
 
 const theme = (config) => {
   return {
-    name: 'vuepress-theme-simple',
+    name: '@calibur-tv/vuepress-theme-eva',
     layouts: path.resolve(__dirname, 'layouts'),
     clientAppEnhanceFiles: path.resolve(__dirname, './client/clientAppEnhance.ts'),
     plugins: [
