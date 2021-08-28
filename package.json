@@ -1,5 +1,5 @@
 {
-  "name": "@calibur-tv/vuepress-theme-eva",
+  "name": "@calibur/vuepress-theme-eva",
   "description": "A vuepress-next blog theme",
   "version": "0.0.1",
   "main": "index.js",
