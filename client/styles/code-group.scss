@@ -9,6 +9,7 @@
   margin-bottom: calc(-1.7rem - 6px);
   padding-bottom: calc(1.7rem - 6px);
   padding-left: 10px;
+  padding-right: 10px;
   padding-top: 10px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
@@ -16,10 +17,12 @@
 }
 
 .code-group__ul {
+  position: relative;
   margin: auto 0;
   padding-left: 0;
   display: inline-flex;
   list-style: none;
+  width: 100%;
 }
 
 .code-group__nav-tab {
@@ -42,15 +45,7 @@
 }
 
 .code-group__nav-tab-active {
-  border-bottom: var(--c-brand) 1px solid;
-}
-
-@media (max-width: $MQMobileNarrow) {
-  .code-group__nav {
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
-    border-radius: 0;
-  }
+  border-bottom: var(--c-brand) 2px solid;
 }
 
 /**
