@@ -1,7 +1,7 @@
 {
   "name": "@calibur/vuepress-theme-eva",
   "description": "A vuepress-next blog theme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev example --debug",
