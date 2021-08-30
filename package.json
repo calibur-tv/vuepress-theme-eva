@@ -16,15 +16,16 @@
   "repository": "@calibur-tv/vuepress-theme-eva",
   "license": "MIT",
   "devDependencies": {
-    "standard-version": "^9.3.1",
-    "vuepress": "^2.0.0-beta.24",
     "sass": "^1.38.0",
     "sass-loader": "^12.1.0",
-    "vue": "^3.2.3"
+    "standard-version": "^9.3.1",
+    "vue": "^3.2.3",
+    "vuepress": "^2.0.0-beta.24"
   },
   "dependencies": {
     "@vuepress/client": "^2.0.0-beta.24",
     "@vuepress/core": "^2.0.0-beta.24",
+    "@vuepress/plugin-git": "^2.0.0-beta.25",
     "@vuepress/plugin-medium-zoom": "^2.0.0-beta.24",
     "@vuepress/plugin-nprogress": "^2.0.0-beta.24",
     "@vuepress/plugin-palette": "^2.0.0-beta.24",

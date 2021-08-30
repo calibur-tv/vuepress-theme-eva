@@ -5,7 +5,7 @@
         {{ pageData.title }}
       </h1>
       <time-ago
-        :last-updated="pageData.frontmatter.date"
+        :last-updated="pageData.git.updatedTime"
         class="post-date"
       />
     </div>

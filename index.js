@@ -22,7 +22,14 @@ const theme = (config) => {
         '@vuepress/nprogress',
         config.nprogress !== false
       ],
-      ['@vuepress/palette', { preset: 'sass' }],
+      [
+        '@vuepress/palette',
+        { preset: 'sass' }
+      ],
+      [
+        '@vuepress/git',
+        config.git !== false
+      ],
       [
         '@vuepress/medium-zoom',
         {
@@ -43,7 +50,7 @@ const theme = (config) => {
         })
         .filter(item => item.path !== '/' && item.path !== '/404.html')
         .sort((a, b) => {
-          return new Date(b.frontmatter.date || b.lastUpdated) - new Date(a.frontmatter.date || a.lastUpdated)
+          return b.git.createdTime - a.git.createdTime
         })
 
       await app.writeTemp('notes.js', `export default ${JSON.stringify(notes)}`)
