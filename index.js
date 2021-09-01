@@ -1,4 +1,5 @@
 const { path } = require('@vuepress/utils')
+const fetch = require('node-fetch')
 
 const theme = (config) => {
   return {
@@ -33,7 +34,7 @@ const theme = (config) => {
       [
         '@vuepress/medium-zoom',
         {
-          selector: '.theme-container > img, .theme-container :not(a) > img',
+          selector: '.post-view > img, .post-view :not(a) > img',
           zoomOptions: {
             background: '#BADA55'
           },
@@ -53,6 +54,9 @@ const theme = (config) => {
           return b.git.createdTime - a.git.createdTime
         })
 
+      const author = await fetch('https://api.github.com/users/falstack').then(user => user.json())
+
+      await app.writeTemp('author.js', `export default ${JSON.stringify(author)}`)
       await app.writeTemp('notes.js', `export default ${JSON.stringify(notes)}`)
     }
   }

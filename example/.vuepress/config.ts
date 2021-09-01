@@ -7,6 +7,6 @@ export default defineUserConfig<DefaultThemeOptions>({
   description: 'Example for @calibur-tv/vuepress-theme-eva',
   theme: path.resolve(__dirname, '../../'),
   themeConfig: {
-    author: '冰淤'
+    author: 'falstack'
   },
 })

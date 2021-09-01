@@ -13,20 +13,9 @@
   </section>
 </template>
 
-<script>
-import TimeAgo from './TimeAgo';
+<script lang="ts" setup>
+import TimeAgo from '../components/TimeAgo.vue'
 import { usePageData } from '@vuepress/client'
 
-export default {
-  components: {
-    TimeAgo
-  },
-  setup() {
-    const pageData = usePageData()
-
-    return {
-      pageData
-    }
-  }
-}
+const pageData = usePageData()
 </script>

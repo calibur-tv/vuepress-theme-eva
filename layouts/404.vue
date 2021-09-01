@@ -17,18 +17,13 @@
         Back to home.
       </router-link>
     </div>
-    <footer-bar />
   </div>
 </template>
 
 <script>
 import { useSiteData } from '@vuepress/client'
-import FooterBar from '../components/FooterBar'
 
 export default {
-  components: {
-    FooterBar,
-  },
   setup() {
     const siteData = useSiteData()
   

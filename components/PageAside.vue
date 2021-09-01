@@ -1,13 +1,7 @@
 <template>
-  <footer class="footer">
-    <span>
-      © {{ thisYear }}
-    </span>
-    <template v-if="author">
-      <i class="icon-user" />
-      <span>{{ author }}</span>
-    </template>
-  </footer>
+  <aside class="sidebar">
+    sidebar
+  </aside>
 </template>
 
 <script>

@@ -1,36 +1,24 @@
 <template>
-  <div class="theme-container">
-    <header class="header">
-      <router-link
-        to="/"
-        :title="site.description"
-        class="site-name"
-      >
-        {{ site.title }}
-      </router-link>
-      <div style="clear: both" />
-      <nav-bar />
-    </header>
-    <home-page v-if="page.path === '/'" />
-    <post-page v-else />
-    <footer-bar />
-  </div>
+  <page-header />
+  <page-sidebar />
+  <page-content />
+  <page-footer />
 </template>
 
 <script>
 import { useSiteData, usePageData } from '@vuepress/client'
 import { useThemeData } from '@vuepress/plugin-theme-data/lib/client'
-import HomePage from '../components/Home'
-import PostPage from '../components/Post'
-import FooterBar from '../components/FooterBar'
-import NavBar from '../components/NavBar'
+import PageHeader from '../components/PageHeader.vue'
+import PageSidebar from '../components/PageAside.vue'
+import PageContent from '../components/PageContent.vue'
+import PageFooter from '../components/PageFooter'
 
 export default {
   components: {
-    HomePage,
-    PostPage,
-    FooterBar,
-    NavBar,
+    PageHeader,
+    PageSidebar,
+    PageContent,
+    PageFooter
   },
   setup() {
     const site = useSiteData()
